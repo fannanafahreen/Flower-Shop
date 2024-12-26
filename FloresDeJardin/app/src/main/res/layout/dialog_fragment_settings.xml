@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        android:background="@color/lavender_300"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight=".8"
+            android:gravity="start|center"
+            android:textStyle="bold"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jacques_francois"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_close"
+            app:tint="@color/white"
+            android:contentDescription="btn" />
+
+    </LinearLayout>
+
+
+    <!---->
+
+
+    <LinearLayout
+        android:id="@+id/btn_profile"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="17.5dp"
+                android:src="@mipmap/ic_profile"
+                app:tint="@color/primary_colour"
+                android:contentDescription="@string/img"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:text="Profile"
+            android:textColor="@color/primary_colour"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:padding="17.5dp"
+            android:src="@mipmap/ic_angle_right"
+            app:tint="@color/primary_colour"
+            android:contentDescription="@string/img"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="17.5dp"
+                android:src="@mipmap/ic_lock"
+                app:tint="@color/primary_colour"
+                android:contentDescription="@string/img"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:text="Change Password"
+            android:textColor="@color/primary_colour"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:contentDescription="@string/img"
+            android:padding="17.5dp"
+            android:src="@mipmap/ic_angle_right"
+            app:tint="@color/primary_colour" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/surface_circle"
+        android:gravity="center"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        &lt;!&ndash;&ndash;&gt;
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+
+
+
+        &lt;!&ndash;<LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:background="@drawable/surface_circle">
+
+
+            <ImageView
+                android:id="@+id/iv_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".1"
+                android:contentDescription="@string/btn"
+                android:padding="5dp"
+                android:src="@mipmap/ic_logout"
+                app:tint="@color/white"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/log_out"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>&ndash;&gt;
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+
+
+    </LinearLayout>-->
+
+
+</LinearLayout>
